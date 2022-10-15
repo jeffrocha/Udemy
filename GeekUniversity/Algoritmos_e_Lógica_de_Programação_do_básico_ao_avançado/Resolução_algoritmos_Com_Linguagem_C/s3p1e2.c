@@ -10,7 +10,7 @@ entrada
 processar
     somar quantidade_minima e quantidade_maxima
     dividir o resultado da soma por 2
-saÃ­da
+saí­da
     Mostrar o resultado da divisão
 */
 #include <stdio.h>
