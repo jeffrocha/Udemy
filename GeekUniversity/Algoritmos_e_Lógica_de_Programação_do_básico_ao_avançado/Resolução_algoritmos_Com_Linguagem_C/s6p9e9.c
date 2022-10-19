@@ -10,3 +10,37 @@ faça um algoritmo que leia o indice de poluição medido e emita a notificação ade
 
 
 */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <locale.h>
+
+int main(void)
+{
+    setlocale(LC_ALL, "Portuguese,Brazil");
+    float ValInd;
+    char ValLow[85];
+    char ValMid[91];
+    char ValHigh[80];
+
+    strcpy(ValLow, "indice <= 0,3: as indústrias do 1º grupo são intimadas a suspenderer suas atividades.");
+    strcpy(ValMid, "indice 0,4 < 0,5: as industrias do 1º e 2º grupos são intimadas a suspenderem suas atividades.");
+    strcpy(ValHigh, "indice >=0,5: todos os grupos devem ser notificados a paralisarem suas atividades.");
+
+    printf("\nDigite o indice de poluição: ");
+    scanf("%f", &ValInd);
+
+    if (ValInd <= 0.3)
+    {
+        printf("\n%s\n\n", ValLow);
+    }
+    if ((ValInd >= 0.4) && (ValInd < 0.5))
+    {
+        printf("\n%s\n\n", ValMid);
+    }
+    if (ValInd >= 0.5)
+    {
+        printf("\n%s\n\n", ValHigh);
+    }
+}
