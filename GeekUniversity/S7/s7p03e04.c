@@ -12,19 +12,16 @@ C) Calcule a media dos números lidos
 int main(void)
 {
     setlocale(LC_ALL, "Portuguese_Brazil");
-    int ValMaior, ValMenor, ValSoma, ValNum = 0;
-    ValMaior = 0;
-    ValSoma = 0;
-    ValNum = 0;
+    int ValMaior, ValMenor, ValSoma, ValNum;
+    ValMaior = ValMenor = ValSoma = ValNum = 0;
+
     for (size_t ValIndex = 1; ValIndex <= 10; ValIndex++)
     {
         printf("\nDigite o %dº valor inteiro: ", ValIndex);
         scanf("%d", &ValNum);
         if (ValIndex == 1)
         {
-            ValMaior = ValNum;
-            ValMenor = ValNum;
-            ValSoma = ValSoma + ValNum;
+            ValMaior = ValMenor = ValSoma = ValNum;
         }
         else
         {
