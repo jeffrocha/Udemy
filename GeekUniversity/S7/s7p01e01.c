@@ -14,8 +14,8 @@ int main(void)
 {
     setlocale(LC_ALL, "Portuguese_Brazil");
     int ValMaior, Index;
-    ValMaior = 0;
     Index = 0;
+    ValMaior = 0;
     do
     {
         printf("Digite um número: ");
