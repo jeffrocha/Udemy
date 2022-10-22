@@ -18,7 +18,7 @@ faça um algoritmo que leia o indice de poluição medido e emita a notificação ade
 
 int main(void)
 {
-    setlocale(LC_ALL, "Portuguese,Brazil");
+    setlocale(LC_ALL, "Portuguese_Brazil");
     float ValInd;
     char ValLow[85];
     char ValMid[91];

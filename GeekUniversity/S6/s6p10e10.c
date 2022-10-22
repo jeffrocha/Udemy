@@ -10,8 +10,6 @@ adulto = Igual ou maior que 18 anos
 */
 
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include <locale.h>
 int FunCat()
 {
