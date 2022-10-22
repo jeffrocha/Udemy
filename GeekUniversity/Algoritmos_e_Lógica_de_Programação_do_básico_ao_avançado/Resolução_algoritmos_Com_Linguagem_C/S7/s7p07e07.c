@@ -78,6 +78,7 @@ int main(void)
             ValRep = 1;
             break;
         default:
+            printf("\nERRO:Código incorreto, digite novamente\n");
             break;
         }
 
