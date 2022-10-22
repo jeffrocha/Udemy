@@ -19,16 +19,18 @@ Tabuada de 5:
 int main(void)
 {
     setlocale(LC_ALL, "Portuguese_Brazil");
-    int ValNum, ValMult, ValRep, ValCalc;
-    ValNum = ValMult = ValRep = ValCalc = 0;
+
+    int ValNum, ValMult, ValCalc;
+    ValNum = ValMult = 0;
+
     printf("\nDigite o número da tabuada deseja exibir: ");
     scanf("%d", &ValNum);
+
     printf("\nDigite o número que deseja que a tabuada vá: ");
     scanf("%d", &ValMult);
-    do
+
+    for (size_t ValRep = 1; ValRep <= 10; ValRep++)
     {
-        ValCalc = ValNum * ValRep;
-        printf("%d x %d = %d\n", ValNum, ValRep, ValCalc);
-        ValRep = ValRep + 1;
-    } while (ValRep < (ValMult + 1));
+        printf("%d x %d = %d\n", ValNum, ValRep, (ValNum * ValRep));
+    }
 }
