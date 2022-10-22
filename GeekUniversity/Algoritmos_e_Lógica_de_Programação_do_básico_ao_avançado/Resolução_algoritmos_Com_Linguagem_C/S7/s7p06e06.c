@@ -29,7 +29,7 @@ int main(void)
     printf("\nDigite o número que deseja que a tabuada vá: ");
     scanf("%d", &ValMult);
 
-    for (size_t ValRep = 1; ValRep <= 10; ValRep++)
+    for (size_t ValRep = 1; ValRep <= ValMult; ValRep++)
     {
         printf("%d x %d = %d\n", ValNum, ValRep, (ValNum * ValRep));
     }
