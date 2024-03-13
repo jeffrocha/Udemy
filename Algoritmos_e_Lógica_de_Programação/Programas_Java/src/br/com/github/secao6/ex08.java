@@ -26,10 +26,7 @@ public class ex08
 			{
 				System.out.println(" e Par ");
 			}
-			else
-			{
-				System.out.println(" e Impar");
-			}
+			else{System.out.println(" e Impar");}
 		}
 		else if (Var_Num1>0) {
 			System.out.print("Número é Positivo");
