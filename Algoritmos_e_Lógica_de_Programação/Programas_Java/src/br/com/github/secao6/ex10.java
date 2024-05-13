@@ -21,6 +21,6 @@ public class ex10 {
         	System.out.println("Juvenil-B");
         }else if (varIdade >=18 ){
         	System.out.println("Adulto");}
-	teclaod.close;
+	teclaod.close();
 	}
 }
