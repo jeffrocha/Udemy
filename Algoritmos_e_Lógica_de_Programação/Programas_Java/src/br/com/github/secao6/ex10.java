@@ -1,3 +1,12 @@
+/*Elabore um algoritmo que dada a idade de um nadador classifique-o em uma das 
+seguites catergorias
+Infantil-A 5 a 7 anos;
+Infantil-B 8 a 11 anos;
+Juvenil-A 12 a 13 anos;
+Juvenil-B 14 a 17 anos;
+Adulto = Maiores de 18 anos;
+*/
+
 package br.com.github.secao6;
 
 import java.util.Scanner;
