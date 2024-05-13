@@ -18,15 +18,14 @@ public class ex04
         for (int i=1 ; i<=10 ; i++){
             System.out.printf("Digite o %dº valor: ", i);
             varIndice=teclado.nextInt();
-            if (varIndice > varMaior){
-                varMaior=varIndice;}
-                
+            
            if(i==1){
                varMenor=varIndice;
+               varMaior=varIndice;
            }else if(varIndice<varMenor){
                varMenor=varIndice;
-           }
-                
+           }else if (varIndice > varMaior){
+                varMaior=varIndice;}
             varMedia += varIndice;
         }
             varMedia = varMedia/10;
