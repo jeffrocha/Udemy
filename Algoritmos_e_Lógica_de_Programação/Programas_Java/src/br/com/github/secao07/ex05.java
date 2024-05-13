@@ -1,37 +1,35 @@
 /******************************************************************************
-Construa um algoritmo que leia 10 valores inteiros e positivos e:
-a)Encontre o maior valores;
-b)Encontre o menor valor;
-c)Calcule a média dos números lidos
+Faça um programa que leia um nome de usuario e a sua senha e nao aceie a
+senha igual ao nome do usuario, mostre uma mensagem de erro e volte 
+a pedir as informações
 *******************************************************************************/
 
-package br.com.github.secao07;
+//package br.com.github.secao07;
 
 import java.util.Scanner;
 
-public class ex04 
+public class ex05 
 
 {
     public static void main(String[] args) {
         Scanner teclado=new Scanner(System.in);
-        int varIndice,varMaior=0, varMenor=0, varMedia=0;
-        for (int i=1 ; i<=10 ; i++){
-            System.out.printf("Digite o %dº valor: ", i);
-            varIndice=teclado.nextInt();
-            
-           if(i==1){
-               varMenor=varIndice;
-               varMaior=varIndice;
-           }else if(varIndice<varMenor){
-               varMenor=varIndice;
-           }else if (varIndice > varMaior){
-                varMaior=varIndice;}
-            varMedia += varIndice;
+        String varNome, varSenha;
+        
+        System.out.println("Informe o nome: ");
+        varNome=teclado.next();
+        
+        System.out.println("Informe a senha: ");
+        varSenha=teclado.next();
+        
+        while(varNome.equals(varSenha)){
+            System.out.println("Nome e Usuario com senhas iguais, altere uma delas.");
+            System.out.println("Informe o nome: ");
+            varNome=teclado.next();
+        
+            System.out.println("Informe a senha: ");
+            varSenha=teclado.next();
         }
-            varMedia = varMedia/10;
-            System.out.println(varMaior);
-            System.out.println(varMenor);
-            System.out.println(varMedia);
-            teclado.close();
-        } 
+        teclado.close();
+        
     }
+}
