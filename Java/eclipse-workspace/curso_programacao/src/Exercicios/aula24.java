@@ -2,7 +2,7 @@ package Exercicios;
 
 import java.util.Locale;
 
-public class Ex24 {
+public class aula24 {
 
 	public static void main(String[] args) {
 		//Exercício aula 24 - saída de dados em java
