@@ -41,6 +41,7 @@ public class aula30e05 {
 		System.out.println("O valor da Peça 2 é: R$" + valorPeca2);
 		System.out.println();
 		System.out.println("Valor total:R$" + valorTotal);
+		sc.close();
 	}
 		
   }
