@@ -1,5 +1,7 @@
 package Exercicios;
 
+import java.util.Scanner;
+
 public class aula30e04 {
 
 	public static void main(String[] args) {
@@ -33,6 +35,7 @@ public class aula30e04 {
         System.out.println("Horas Trabalhdas pelo funcionario: " + horasTrabalhadas);
         System.out.println("Salario hora do trabalhador: " + salarioHora);
         System.out.println("Salario total do funcionario:R$" + salarioTotal);
+        sc.close();
 
 	}
 }
