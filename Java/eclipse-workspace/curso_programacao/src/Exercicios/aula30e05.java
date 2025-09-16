@@ -1,6 +1,7 @@
-import java.util.Scanner;
-
 package Exercicios;
+
+import java.util.Locale;
+import java.util.Scanner;
 
 public class aula30e05 {
 
@@ -10,9 +11,11 @@ public class aula30e05 {
 		o código da peça 2, o número de peças 2, o valor unitario de cada peça 2. Calcule e mostre o valor a ser pago.
 		*/
 		Scanner sc= new Scanner(System.in);
+		Locale.setDefault(Locale.US);
+		
 		int codigoPeca1,codigoPeca2,qtdPeca1,qtdPeca2;
 		double valorPeca1,valorPeca2,valorTotal;
-		valorPeca1=valorPeca2=valorTotal=0.00;
+		
 		
 		//Entrada
 		System.out.print("Digite o código da peça 1:");
