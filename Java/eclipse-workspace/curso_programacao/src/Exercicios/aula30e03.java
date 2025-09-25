@@ -12,7 +12,7 @@ public class aula30e03 {
 		C=7;
 		D=8;
 		DIFERENCA=(A*B-C*D);
-		System.out.println(DIFERENCA);
+		System.out.printf("DIFERENCA = %d%n", DIFERENCA);
 
 		// Entrada:5,6,-7,8 ; Saída:DIFERENÇA = 86
 		A=5;
@@ -20,7 +20,7 @@ public class aula30e03 {
 		C=-7;
 		D=8;
 		DIFERENCA=(A*B-C*D);
-		System.out.println(DIFERENCA);
+		System.out.printf("DIFERENCA = %d%n", DIFERENCA);
 
 	}
 

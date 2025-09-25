@@ -1,5 +1,6 @@
 package Exercicios;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class aula30e04 {
@@ -11,6 +12,7 @@ public class aula30e04 {
 		 * funcionário. A seguir, mostre o número e o salário do funcionário, com duas
 		 * casas decimais.
 		 */
+		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
 		int idFuncionario;
