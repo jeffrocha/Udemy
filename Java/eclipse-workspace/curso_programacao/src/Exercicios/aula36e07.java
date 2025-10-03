@@ -1,5 +1,7 @@
 package Exercicios;
 
+import java.util.Scanner;
+
 public class aula36e07 {
 
 	public static void main(String[] args) {
@@ -16,9 +18,24 @@ public class aula36e07 {
 		 *   Terceiro quadrante → Q3
 		 *   Quarto quadrante → Q4
 		 */
+		Scanner sc=new Scanner(System.in);
+		double x,y;
 		
+		System.out.println("Digite X:");
+		x=sc.nextDouble();
+		System.out.println("Digite Y:");
+		y=sc.nextDouble();
 		
-
+		if (x==0){System.out.println("Eixo x");}
+		if (y==0){System.out.println("Eixo y");}
+		if (x>0 && y>0){System.out.println("Q2");}
+		if (x>0 && y<0){System.out.println("Q4");}
+		if (x<0 && y>0){System.out.println("Q1");}
+		if (x<0 && y<0){System.out.println("Q3");}
+		sc.close();
 	}
-
-}
+	}
+				
+					
+				
+					
