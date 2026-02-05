@@ -7,12 +7,8 @@ public class aula30e05 {
 		o código da peça 2, o número de peças 2, o valor unitario de cada peça 2. Calcule e mostre o valor a ser pago.*/
 		Locale.setDefault(Locale.US);
 		Scanner sc= new Scanner(System.in);	
-		int codigoPeca1,codigoPeca2,qtdPeca1,qtdPeca2;
+		int qtdPeca1,qtdPeca2;
 		double valorPeca1,valorPeca2,valorTotal;
-		System.out.print("Digite o código da peça 1:");
-        codigoPeca1=sc.nextInt();
-        System.out.print("Digite o código da peça 2:");
-        codigoPeca2=sc.nextInt();
         System.out.print("Número de peças 1:");
         qtdPeca1=sc.nextInt();
         System.out.print("Número de peças 2:");
