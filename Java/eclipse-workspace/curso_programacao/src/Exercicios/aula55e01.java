@@ -10,7 +10,12 @@ package Exercicios;
 public class aula55e01 {
 
 	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int varSenha,varCondicao;
 
+		System.out.printf("Digite 1 para salvar nova senha ou 2 para entrar com senha");
+		
+	sc.close();
 	}
 
 }
