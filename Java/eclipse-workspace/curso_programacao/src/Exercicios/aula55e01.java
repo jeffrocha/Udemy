@@ -14,6 +14,7 @@ public class aula55e01 {
 		int varSenha,varCondicao;
 
 		System.out.printf("Digite 1 para salvar nova senha ou 2 para entrar com senha");
+		varCondicao = sc.nextInt();
 		
 	sc.close();
 	}
