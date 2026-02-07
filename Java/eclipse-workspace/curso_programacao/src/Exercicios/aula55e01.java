@@ -7,16 +7,24 @@
 
 package Exercicios;
 
+import java.util.Scanner;
+
 public class aula55e01 {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-		int varSenha,varCondicao;
-
-		System.out.printf("Digite 1 para salvar nova senha ou 2 para entrar com senha");
-		varCondicao = sc.nextInt();
-		
-	sc.close();
+		int varSenha=123;
+		int varSenhaEntrada;
+		System.out.printf("Digite a senha: ");
+		varSenhaEntrada= sc.nextInt();
+		while(varSenha != varSenhaEntrada) {
+			System.out.println("*** Senha incorreta! ***");
+			System.out.printf("Digite a senha: ");
+			varSenhaEntrada = sc.nextInt();
+		}
+			System.out.printf("Senha %d Correta", varSenha);
+			sc.close();
 	}
-
 }
+
+
