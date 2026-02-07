@@ -13,13 +13,12 @@ import java.util.Scanner;
 public class aula55e02 {
 
 	public static void main(String[] args) {
-		Scanner sc=ne Scanner(Sstem.in);
+		Scanner sc=new Scanner(System.in);
 		int varX,varY;
-		while (vaX == 0 && varY == 0){
-			System.out.printl("Digite o valor de X);varX=sc.nextInt();
-			System.out.printl("Digite o valor de y);varY=sc.nextInt();
+		while (varX == 0 && varY == 0){
+		System.out.println("Digite o valor de X");varX=sc.nextInt();
+		System.out.println("Digite o valor de y");varY=sc.nextInt();
 		}
 		sc.close();
 	}
-	
 }
