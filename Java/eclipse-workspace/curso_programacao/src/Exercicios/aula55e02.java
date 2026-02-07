@@ -8,6 +8,8 @@ coordenadas for NULA (nesta situação sem escrever mensagem alguma).
 
 package Exercicios;
 
+import java.util.Scanner;
+
 public class aula55e02 {
 
 	public static void main(String[] args) {
