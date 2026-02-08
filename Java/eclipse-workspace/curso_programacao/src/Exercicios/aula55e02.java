@@ -19,6 +19,7 @@ public class aula55e02 {
 		while (varX != 0 && varY != 0){
 		System.out.println("Digite o valor de X");varX=sc.nextInt();
 		System.out.println("Digite o valor de y");varY=sc.nextInt();
+		
 		}
 		sc.close();
 	}
