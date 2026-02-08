@@ -17,10 +17,14 @@ public class aula55e02 {
 		int varX,varY;
 		varX=varY=1;
 		while (varX != 0 && varY != 0){
-		System.out.println("Digite o valor de X");varX=sc.nextInt();
-		System.out.println("Digite o valor de y");varY=sc.nextInt();
-		
+		System.out.printf("Digite o valor de X: ");varX=sc.nextInt();
+		System.out.printf("Digite o valor de y: ");varY=sc.nextInt();
+		if (varX > 0 && varY > 0) { System.out.println("Primeiro");}
+		if (varX < 0 && varY > 0) { System.out.println("Segundo");}
+		if (varX < 0 && varY < 0) { System.out.println("Terceiro");}
+		if (varX > 0 && varY < 0) { System.out.println("Quarto");}				
 		}
+		System.out.println("Finalizado");
 		sc.close();
 	}
 }
