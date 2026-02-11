@@ -21,14 +21,43 @@ Entrada:		Saída:
 
  */
 
-
 package Exercicios;
+
+import java.util.Scanner;
 
 public class aula55e03 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int varAlcool=0, varGasolina=0, varDiesel=0, varIndex = 0;
+		while (varIndex != 4) {
+			System.out.println("1 - Álcool");
+			System.out.println("2 - Gasolina");
+			System.out.println("3 - Diesel");
+			System.out.println("4 - Fim");
+			varIndex=sc.nextInt();
+			switch (varIndex) {
+			case 1:
+				varAlcool++;
+				break;
+			case 2:
+				varGasolina++;
+				break;
+			case 3:
+				varDiesel++;
+				break;
+			case 4:
+				System.out.println("\nMuito Obrigado");
+				System.out.printf("\nÁlcool:    " + varAlcool);
+				System.out.printf("\nGasolina:  " + varGasolina);
+				System.out.printf("\nDiesel:    " + varDiesel);
+				break;
+			default:
+				System.out.println("\nCódigo invalido");
+			}
 
+		}
+		sc.close();
 	}
 
 }
