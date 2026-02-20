@@ -12,9 +12,8 @@ public class aula61e01 {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-		int varX;
 		System.out.println("Digite o valor de X");
-		varX=sc.nextInt();
+		int varX=sc.nextInt();
 		for (int i=1; i<(varX+1); i++) {
 			if (i %2!=0) {
 			System.out.println(i);	
